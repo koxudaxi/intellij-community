@@ -638,6 +638,12 @@ The Python plug-in provides smart editing for Python scripts. The feature set of
       key="quickfix.ranking.ml"
       defaultValue="[IN_EXPERIMENT*|ENABLED|DISABLED]"
       description="Enable ML ranking in quick fix for missing imports"/>
+
+    <!-- Template Strings -->
+    <multiHostInjector implementation="com.jetbrains.python.codeInsight.TemplateStringsInjector"/>
+    <lang.inspectionSuppressor language="Python"
+                               implementationClass="com.jetbrains.python.inspections.typeignore.TemplateStringsTypeIgnoreInspectionSuppressor"/>
+
   </extensions>
 
   <extensionPoints>
