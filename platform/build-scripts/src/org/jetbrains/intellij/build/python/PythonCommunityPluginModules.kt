@@ -32,6 +32,7 @@ object PythonCommunityPluginModules {
     "intellij.python.reStructuredText",
     "intellij.python.sdk",
     "intellij.python.terminal",
+    "com.koxudaxi.htmpy",
   )
 
   /**

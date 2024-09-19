@@ -52,6 +52,7 @@ The Python plug-in provides smart editing for Python scripts. The feature set of
     <module name="intellij.python.markdown"/>
     <module name="intellij.python.reStructuredText"/>
     <module name="intellij.python.terminal"/>
+    <module name="com.koxudaxi.htmpy"/>
   </content>
 
   <resource-bundle>messages.PyBundle</resource-bundle>

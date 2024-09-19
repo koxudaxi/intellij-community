@@ -1,0 +1,16 @@
+<idea-plugin package="com.koxudaxi.htmpy">
+  <extensions defaultExtensionNs="com.intellij">
+    <localInspection implementationClass="com.koxudaxi.htmpy.HtmpyInspection" displayName="HtmpyInspection" shortName="HtmpyInspection" enabledByDefault="true"
+                     language="Python"/>
+
+    <completion.contributor implementationClass="com.koxudaxi.htmpy.completion.HtmpyKeywordCompletionContributor" language="HTML"/>
+    <completion.contributor implementationClass="com.koxudaxi.htmpy.completion.HtmpyTagCompletionContributor" language="Python"/>
+    <psi.referenceContributor implementation="com.koxudaxi.htmpy.psi.HtmpyReferenceContributor"
+                              language="Python"/>
+  </extensions>
+  <extensions defaultExtensionNs="Pythonid">
+    <inspectionExtension implementation="com.koxudaxi.htmpy.psi.HtmpyIgnoreUnusedInspection"/>
+    <!--<pyReferenceResolveProvider implementation="com.koxudaxi.htmpy.psi.resolve.HtmpyReferenceResolveProvider"/>-->
+  </extensions>
+</idea-plugin>
+
